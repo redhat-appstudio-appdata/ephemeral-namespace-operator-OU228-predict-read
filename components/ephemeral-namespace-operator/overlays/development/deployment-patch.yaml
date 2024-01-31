@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ephemeral-namespace-operator
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-devprod-tenant/ephemeral-namespace-operator/ephemeral-namespace-operator@sha256:cd24ad6e3a2be6d063174d04699b66b49b1ce3b3ee2e5edd9658f4cd0bf0af92
+        name: container-image
+        resources: {}
+status: {}
