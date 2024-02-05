@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ephemeral-namespace-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ephemeral-namespace-operator
+    app.kubernetes.io/part-of: ephemeral-namespace-operator
+  name: ephemeral-namespace-operaq3cc
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: ephemeral-namespace-operator
+    weight: 100
+status: {}
