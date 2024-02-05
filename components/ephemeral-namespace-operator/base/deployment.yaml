@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: ephemeral-namespace-operator
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-devprod-tenant/ephemeral-namespace-operator/ephemeral-namespace-operator@sha256:28742a547534573954256d95ab6ac9f168a57bdc0791177584650b2b46bc9f16
+      - image: quay.io/redhat-user-workloads/hcc-devprod-tenant/ephemeral-namespace-operator/ephemeral-namespace-operator@sha256:50b7706c66a27e2537b92d56064e6cdd1f0856b31bddc11582e6d7cd3ce529bc
         imagePullPolicy: Always
         name: container-image
         ports:
