@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-devprod-tenant/ephemeral-namespace-operator/ephemeral-namespace-operator@sha256:11013713082cd1e862ade571abc3d9e7dec5de2e036f180a8f567159ccde2f45
+      - image: quay.io/redhat-user-workloads/hcc-devprod-tenant/ephemeral-namespace-operator/ephemeral-namespace-operator@sha256:6025a32342d71926aca0a103c716a8e4db02a8199af18a198140e279e5e6f789
         name: container-image
         resources: {}
 status: {}
